@@ -13,32 +13,29 @@ Feel free to use your workstation to test your answers to the questions that don
 ==========
 1. Write the command that you would use to change to the root directory.
 ----------
-
+cd /
 
 
 ==========
 2. Write the command that you would use to change to your home directory.
 ----------
-
+cd ~
 
 
 ==========
 3. Write the command that you would use to change to your Desktop folder.
 ----------
-
-
+cd ~/Desktop
 
 ==========
 4. What's the absolute path to your home directory?
 ----------
-
-
+/Users/hugosanchezprieto
 
 ==========
 5. What's the absolute path to your Desktop directory?
 ----------
-
-
+/Users/hugosanchezprieto/Desktop
 
 ==========
 6. What's the absolute path to your Desktop directory?
@@ -49,7 +46,7 @@ Feel free to use your workstation to test your answers to the questions that don
 ==========
 7. If you're in your home directory, what's the relative path to your Desktop directory?
 ----------
-
+Desktop
 
 ==========
 8. If you're in your home directory, how would you create a new directory on your desktop called stuff without changing your directory?  Write your command below.
