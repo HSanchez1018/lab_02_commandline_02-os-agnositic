@@ -104,23 +104,22 @@ Copy and paste the output below, but not the whole thing!  Just copy up to the p
 
 Write the command you used below.  Also copy and paste the output below.
 ----------
-
-
-
-==========
+curl -o google.html www.google.com
+ % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+100 14761    0 14761    0     0   142k      0 --:--:-- --:--:-- --:--:--  142k==========
 11. Now let's download the lab file for this homework.  First, figure out what directory you're in.
 
 Write the command you used to determine your directory.  Also, copy and paste the output below.
 ----------
-
-
-
+pwd
+/Users/hugosanchezprieto
 ==========
 12. If you're not in your home directory, change to it (use the shortcut).
 
 Write the command that you used to change to your home directory.  If you were already in your home directory, write the command that you *would* have used to change to it!
 ----------
-
+cd ~
 
 
 ==========
@@ -136,25 +135,24 @@ Use ls to verify that it downloaded.
 
 Write down the command that you used to download the file below.  Additionally, write the output of the command below.
 ----------
+curl -o mtec1003-lab-02.zip https://entertainmenttechnology.github.io/Viera-MTEC1003-fall-2018/mtec1003-lab-02.zip
 
-
-
+ % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+100  920k  100  920k    0     0  1837k      0 --:--:-- --:--:-- --:--:-- 1834k
 ==========
 14. We learned a command to uncompress a .zip file.  Use it to extract the files and folders from the file you just downloaded.
 
 Write down the command that you used to uncompress the file.
 ----------
-
-
+unzip mtec1003-lab-02.zip
 
 ==========
 15. Change to the directory that was just created.  List the contents (of the directory that was extracted from the labs .zip file). 
 
 Copy and paste the output below.
 ----------
-
-
-
+books   logs    web
 ==========
 We're going to mess around with archiving and compressing files.  We'll make a directory with a file in it... archive and compress it.... and uncompress it elsewhere.
 ==========
@@ -163,9 +161,11 @@ We're going to mess around with archiving and compressing files.  We'll make a d
 
 Copy and paste the output below.
 ----------
-
-
-
+Applications            Movies                  futbol                  mtec1003-lab-02
+Desktop                 Music                   goat.jpg                mtec1003-lab-02.zip
+Documents               Pictures                google.html             stuff
+Downloads               Public                  media-computation
+Library                 Youtube                 mtec1003
 ==========
 17. Change into the "stuff" directory that you just created.  Run the following command (we haven't learned this exact command yet, but we will in the next lab!) exactly as described below:
 
@@ -175,20 +175,20 @@ List the files in the directory you're currently in (which should be stuff).
 
 Copy and paste the output below.
 ----------
-
-
-
+hello.txt
 ==========
 18. Go up one directory back into your home directory.  Run the following commands exactly to create a compressed archive of the stuff folder.
 
 $ tar -cvf stuff.tar stuff
-
 List the files in the directory you're currently in (which should be home).  
 
 Copy and paste the output below.
 ----------
-
-
+Applications            Movies                  futbol                  mtec1003-lab-02
+Desktop                 Music                   goat.jpg                mtec1003-lab-02.zip
+Documents               Pictures                google.html             stuff
+Downloads               Public                  media-computation       stuff.tar
+Library                 Youtube                 mtec1003
 
 ==========
 19. Go up one directory back into your home directory.  Run the following commands exactly to create a compressed archive of the stuff folder.
@@ -197,16 +197,19 @@ $ tar -cvf stuff.tar stuff
 
 Copy and paste the output below.
 ----------
-
-
+a stuff
+a stuff/hello.txt
 
 ==========
 20. List the files in the directory you're currently in (which should be home).  
 
 Copy and paste the output below. (It should contain stuff.tar)
 ----------
-
-
+Applications            Movies                  futbol                  mtec1003-lab-02
+Desktop                 Music                   goat.jpg                mtec1003-lab-02.zip
+Documents               Pictures                google.html             stuff
+Downloads               Public                  media-computation       stuff.tar
+Library                 Youtube                 mtec1003
 
 ==========
 21. Now compress it!  Type:
@@ -215,8 +218,11 @@ gzip stuff.tar
 
 List your files again.... you should have a new file with a .gz extension.  Copy and paste the output of your this below.
 ----------
-
-
+Applications            Movies                  futbol                  mtec1003-lab-02
+Desktop                 Music                   goat.jpg                mtec1003-lab-02.zip
+Documents               Pictures                google.html             stuff
+Downloads               Public                  media-computation       stuff.tar.gz
+Library                 Youtube                 mtec1003
 
 ==========
 22. Move stuff.tar.gz into the lab directory that we downloaded.  We didn't learn this command yet, so just type in exactly as is:
@@ -229,8 +235,7 @@ Change your directory to mtec1002-lab-02.
 
 List the files.  Copy and paste the output below (stuff.tar.gz should be there).
 ----------
-
-
+books           logs            stuff.tar.gz    web
 ==========
 23. You should be in the lab directory.  Let's uncompress the file.
 
@@ -238,8 +243,7 @@ $ tar -xvf stuff.tar.gz
 
 List the files.  Copy and paste the output below (the folder, stuff, should be there).
 ----------
-
-
+books           logs            stuff           stuff.tar.gz    web
 
 ==========
 24. Go back to your home directory
@@ -257,9 +261,10 @@ REMEMBER to use the -o flag and specifiy a filenmae that ends in .tar.gz
 
 Write out the commands that you used to do this.
 ----------
+curl -o mtec1003-fall-2018.tar.gz https://entertainmenttechnology.github.io/Viera-MTEC1003-fall-2018/secret.tar.gz
 
-
-
+tar -xvf mtec1003-fall-2018.tar.gz
 ==========
 26. How many files were in the archive.  What were their names?  Write out your answers below.
 ----------
+I had no files
